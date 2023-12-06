@@ -7,12 +7,12 @@
                 Spx Conseil
             </h1>
         </div>
-        <div>
+        <div id="navtopRightDiv">
             <a 
             id="aboutUsA" 
             href="/"
             >
-                à notre propos
+                {{ $t("navtop.aboutUs") }}
             </a>
             <a 
             id="contactA" 
@@ -20,8 +20,8 @@
             >
                 contact
             </a>
+            <p id="separatorDiv"></p>
             <a 
-            id="linkedinA" 
             href="/">
                 <img 
                 id="linkedinImg"
@@ -74,8 +74,10 @@ export default {
         changeLang() {
             if(this.langEN == 'langColorBlack') {
                 console.log('Anglais choisi')
+                this.$i18n.locale = "en"
             } else {
                 console.log('français choisi')
+                this.$i18n.locale = "fr"
             }
         }
     }
@@ -87,9 +89,17 @@ export default {
 #navtop {
     display: flex;
     flex-direction: row;
-    align-items: baseline;
+    align-items: center;
     justify-content: space-between;
     border-bottom: 1px solid black;
+    height: 4rem;
+}
+
+#navtopRightDiv {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 }
 
 #spxConseilH1 {
@@ -107,29 +117,35 @@ export default {
 
 #contactA {
     font-size: 1rem;
-    color: black;
     text-decoration: none;
     margin: 1vh;
+    margin-right: 2vw;
+    color: black;
 }
 
-#linkedinA {
-    margin: 1rem;
+#separatorDiv {
+    width: 1px;
+    height: 40px;
+    background-color: black;
 }
 
 #linkedinImg {
-    width: 5vh;
-    height: 5vh;
-    margin-bottom: -1.9vh;
+    width: 50px;
+    height: 50px;
+    margin-bottom: -5px;
+    margin-left: 1.2vw;
+    margin-right: 0.6vw;
 }
 
 #buttonDiv {
-    font-size: 1rem;
+    font-size: 0.9rem;
     width: 60px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin: 1vh;
     margin-right: 3vw;
+    margin-left: 0;
 }
 
 #langColorBlack {

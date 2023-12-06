@@ -1,7 +1,7 @@
 <template>
     <Navtop />
-    <!-- <About />
-    <Download />
+    <About />
+    <!-- <Download />
     <Team />
     <Contact />
     <Partners />
