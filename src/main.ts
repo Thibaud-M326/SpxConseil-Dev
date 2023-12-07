@@ -17,6 +17,10 @@ import { createI18n } from 'vue-i18n'
 import en from "../locale/en.json"
 import fr from "../locale/fr.json"
 
+//font awesome
+import '@fortawesome/fontawesome-free/css/all.css'
+import { aliases, fa } from 'vuetify/iconsets/fa'
+
 const i18n = createI18n({
   locale: "en",
   fallbackLocale: "en",

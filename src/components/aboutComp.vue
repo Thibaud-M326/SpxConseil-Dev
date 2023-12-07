@@ -3,7 +3,7 @@
         <div id="cityBackgroundDiv">
             <v-parallax
             id="cityBackgroundImg"
-            src="src/assets/SpxConseil/cityBackground.jpg" 
+            src="src/assets/SpxConseil/cityBackgroundDallE.png" 
             ></v-parallax>
         </div>
         <div id="aboutDiv">
@@ -61,5 +61,6 @@ export default {
 #textP {
     font-size: large;
 }
+
 
 </style>
