@@ -6,5 +6,14 @@
     "about": {
         "overview": "Overview :",
         "text": "Mission at the heart of our priorities: the professionalization of students. Serving as a bridge between the associative world and the employment sector, the action of SPX-Conseil, and more broadly, the movement as a whole, focuses daily on the deployment and implementation of theoretical knowledge and practical skills acquired within our school in the professional sector. An undeniable enhancement of our teachings for an enriched professional experience for students – that is the objective of SPX-Conseil, which, every year, can rely on my support. I am proud to have in our ranks a student association that successfully combines entrepreneurial spirit and community service."
+    },
+    "history": {
+        "historyTitle": "History :",
+        "historyText": "Established in 2008, SPX-Conseil is the student consultancy firm of Sciences Po Aix. For the past twelve years, our student association has bridged the gap between the student community and the professional world. Operating on the model of a consultancy firm, we offer organizations, whether public or private, the opportunity to entrust their studies to students from our school. Non-profit but with an educational mission, our association is committed to ensuring that the studies offered to our students are, above all, an opportunity for them to apply the knowledge and skills taught at Sciences Po. Engaging our services means, for an organization, benefiting today from the talents of tomorrow.",
+        "masterTitle": "Proposed Master's Programs :",
+        "masterText": "- Public Careers\n- Certificate of Studies on Spain and Latin America\n- Certificate of Studies on the Contemporary Arab World\n- Certificate of Political Studies - CEP\n- International Political Communication and Democratic Risks - CORIS\n- Strategic and Institutional Communication\n- Association Leader\n- Political Dynamics and Societal Transformations\n- Studies on Intelligence"
+    },
+    "download": {
+        "download": "Download our brochure"
     }
 }

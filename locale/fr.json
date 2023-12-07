@@ -6,5 +6,14 @@
     "about": {
         "overview": "Description :",
         "text": "mission au cœur de nos priorités : la professionnalisation des étudiant(e)s. Comme un trait d’union entre le monde associatif et celui de l’emploi, l’action de SPX-Conseil, et plus largement du mouvement des, se concentre au quotidien sur le déploiement et la mise en application des connaissances théoriques et compétences pratiques acquises au sein de notre École, dans le secteur professionnel. Une indéniable mise en valeur de nos enseignements pour une expérience professionnelle enrichie des étudiant(e)s, voilà l’objectif de SPX-Conseil, qui, chaque année, peut compter sur mon soutien.Je suis fier de pouvoir compter dans nos rangs une association étudiante qui allie avec bonheur esprit d’entreprise et service à la communauté."
+    },
+    "history": {
+        "historyTitle": "Histoire :",
+        "historyText": "Créée en 2008, SPX-Conseil est le cabinet de conseil associatif de Sciences Po Aix. Depuis maintenant douze ans, notre association étudiante fait le lien entre le milieu étudiant et le monde professionnel. Fonctionnant sur le modèle d'un cabinet de conseil, nous proposons à des organisations, publiques ou privées, de confier leurs études à des élèves de notre école. A but non-lucratif, mais à vocation pédagogique, notre association met un point d'honneur à ce que les études proposées à nos étudiants soient avant tout pour eux l'occasion de mettre en application les savoirs et compétences enseignés à Sciences Po. Faire appel à nos services, c'est, pour une organisation, bénéficier aujourd'hui des talents de demain.",
+        "masterTitle": "Master proposés :",
+        "masterText": "- Carrières publiques\n- Certificat d’études sur l’Espagne et l’Amérique Latine\n- Certificat d’études sur le monde arabe contemporain\n- Certificat d’Etudes Politiques - CEP\n- Communication politique internationale et risques démocratiques - CORIS\n- Communication stratégique et institutionnelle\n- Dirigeant d’association\n- Dynamiques politiques et mutations des sociétés\n- Études sur le Renseignement"
+    },
+    "download": {
+        "download": "Telechargez notre plaquette"
     }
 }

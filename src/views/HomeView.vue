@@ -1,8 +1,9 @@
 <template>
     <Navtop />
     <About />
-    <!-- <Download />
-    <Team />
+    <History />
+    <Download />
+    <!-- <Team />
     <Contact />
     <Partners />
     <Foot /> -->
@@ -11,6 +12,7 @@
 <script lang="ts">
 import Navtop from '../components/navtopComp.vue'
 import About from '../components/aboutComp.vue'
+import History from '../components/historyComp.vue'
 import Download from '../components/downloadComp.vue'
 import Team from '../components/teamComp.vue'
 import Contact from '../components/contactComp.vue'
@@ -21,6 +23,7 @@ export default {
     components: {
         Navtop,
         About,
+        History,
         Download,
         Team,
         Contact,
