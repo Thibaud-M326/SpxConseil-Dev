@@ -1,8 +1,19 @@
 <template>
     <div id="downloadDiv">
         <button id="downloadButton">
-            {{ $t("download.download") }}
+            <a
+            id="downloadA"
+            href="../assets/brochure/RESILIATION-DE-LOGEMENT.pdf" 
+            download
+            >
+                <p id="downloadP">
+                    {{ $t("download.download") }}
+                </p>
+                <v-icon icon="fas fa-download" />
+            </a>
         </button>
+    </div>
+    <div id="colorBoxDiv">
     </div>
 </template>
 
@@ -33,4 +44,18 @@ export default {
     box-shadow: 1px 1px 5px rgb(199, 199, 199); /* Changement de l'ombre lorsqu'il est cliqué ou en focus */
 }
 
+#downloadA {
+    display: flex;
+    color: black;
+    text-decoration: none;
+}
+
+#downloadP {
+    margin-right: 1vw;
+}
+
+#colorBoxDiv {
+    height: 6vh;
+    background-color: #F3D0D0;
+}
 </style>

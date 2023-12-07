@@ -3,8 +3,8 @@
     <About />
     <History />
     <Download />
-    <!-- <Team />
-    <Contact />
+    <Team />
+    <!-- <Contact />
     <Partners />
     <Foot /> -->
 </template>
