@@ -21,9 +21,6 @@
             </div>
         </div>
     </div>
-    <div
-    id="tooMuch"
-    ></div>
 </template>
 
 <script lang="ts">
@@ -69,8 +66,4 @@ export default {
     height: 30vh;
 }
 
-#tooMuch {
-    height: 4000px;
-    background-color: rgb(225, 254, 255);
-}
 </style>
