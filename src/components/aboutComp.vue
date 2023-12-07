@@ -62,8 +62,4 @@ export default {
     font-size: large;
 }
 
-#helllo {
-    height: 30vh;
-}
-
 </style>
