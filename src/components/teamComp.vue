@@ -9,6 +9,7 @@
     </template>
   </Carousel>
   <div id="idDiv">
+    hello
   </div>
 </template>
 
