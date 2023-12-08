@@ -1,70 +1,42 @@
 <template>
-    <div id="teamCompDiv">
-        <div id="teamDiv">
-            <div id="titleDiv">
-                <v-icon icon="fas fa-rocket" />
-                <h2>
-                    {{ $t('team.ourTeam') }}
-                </h2>
-            </div>
-            <div id="carouselDiv">
-                hello
-            </div>
-        </div>
-    </div>
+  <Carousel :items-to-show="2.5" :wrap-around="true">
+    <Slide v-for="slide in 10" :key="slide">
+      <div class="carousel__item">{{ slide }}</div>
+    </Slide>
 
-
+    <template #addons>
+      <Navigation />
+    </template>
+  </Carousel>
+  <div id="idDiv">
+    hello
+  </div>
 </template>
 
 <script lang="ts">
-import TeamCard from '../components/team/teamCardComp.vue'
+import { defineComponent } from 'vue'
+import { Carousel, Navigation, Slide } from 'vue3-carousel'
 
-export default {
-    components: {
-        TeamCard
-    },
-    data() {
-        return {
-            slides: [
-                '1',
-                '2',
-                '3',
-            ]
-        }
-    }
-}
+import 'vue3-carousel/dist/carousel.css'
+
+export default defineComponent({
+  name: 'WrapAround',
+  components: {
+    Carousel,
+    Slide,
+    Navigation,
+  },
+})
 </script>
 
 <style scoped>
-
-#teamCompDiv {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 70vh;
+.carousel__item {
+    height: 10vh;
+    width: 10vh;
+    background-color: aqua;
 }
 
-#teamDiv {
-    width: 90vw;
-    height: 60vh;
+#idDiv {
+    height: 30vh;
 }
-
-#titleDiv {
-    display: flex;
-    align-items: center;
-    height: 8vh;
-}
-
-h2 {
-    margin-left: 2vw;
-}
-
-#carouselDiv {
-    display: flex;
-    height: 52vh;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid black;
-}
-
 </style>
