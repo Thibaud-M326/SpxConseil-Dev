@@ -4,22 +4,34 @@
             <div id="titleDiv">
                 <v-icon icon="fas fa-rocket" />
                 <h2>
-                    Notre Equipe :
+                    {{ $t('team.ourTeam') }}
                 </h2>
             </div>
-            <div id="carousselDiv">
-                <p>
-                    caroussel
-                </p>
+            <div id="carouselDiv">
+                hello
             </div>
         </div>
     </div>
+
+
 </template>
 
 <script lang="ts">
+import TeamCard from '../components/team/teamCardComp.vue'
 
 export default {
-
+    components: {
+        TeamCard
+    },
+    data() {
+        return {
+            slides: [
+                '1',
+                '2',
+                '3',
+            ]
+        }
+    }
 }
 </script>
 
@@ -30,31 +42,29 @@ export default {
     justify-content: center;
     align-items: center;
     height: 70vh;
-    background-color: rgb(202, 255, 255);
 }
 
 #teamDiv {
     width: 90vw;
     height: 60vh;
-    background-color: rgb(250, 255, 202);
 }
 
 #titleDiv {
     display: flex;
     align-items: center;
     height: 8vh;
-    background-color: aquamarine;
 }
 
 h2 {
     margin-left: 2vw;
 }
 
-#carousselDiv {
+#carouselDiv {
     display: flex;
     height: 52vh;
     justify-content: center;
     align-items: center;
-    background-color: rgb(215, 172, 255);
+    border: 1px solid black;
 }
+
 </style>
