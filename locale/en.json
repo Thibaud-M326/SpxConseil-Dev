@@ -17,6 +17,14 @@
         "download": "Download our brochure"
     },
     "team": {
-        "ourTeam": "Our Team"
+        "ourTeam": "Our Team",
+        "president": "President",
+        "vicePresident": "Vice President",
+        "generalSecretary": "General Secretary",
+        "businessDevelopmentManager" : "Business Development Manager",
+        "businessDevelopmentDepartment" : "Commercial development Team",
+        "communicationManager" : "Communication Manager",
+        "hrManager" : "HR Manager",
+        "treasurer" : "Treasurer"
     }
 }

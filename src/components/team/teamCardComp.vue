@@ -2,19 +2,18 @@
     <div id="teamCardCompDiv">
         <div id="teamCardDiv">
             <div id="teamImgDiv">
-                <!-- <img :src="pictureSrc" alt=""> -->
                 <img
                     id="teamImg"
-                    src="../../assets/team/1-Thomas-PRESIDENT.png" 
-                    alt=""
+                    :src="photoId"
+                    alt="TeamPicture"
                 >
             </div>
             <div id="teamNameP">
                 <p>
-                    Thomas
+                    {{ name }}
                 </p>
                 <p>
-                    PRESIDENT
+					{{ $t(role!) }}
                 </p>
             </div>
         </div>
@@ -24,21 +23,10 @@
 <script lang="ts">
 export default {
     props: {
-        slide: String,
+        name: String,
+        photoId: String,
+        role: String,
     },
-    data() {
-        return {
-            pictureSrc: ''
-        }
-    },
-    methods: {
-        findPictureSrc() {
-            this.pictureSrc = "../../assets/SpxConseil/spxLogo.jpg"
-        }
-    },
-    mounted() {
-        this.findPictureSrc
-    }
 }
 </script>
 
@@ -51,7 +39,7 @@ export default {
     height: 44vh;
     width: 30vh;
     border-radius: 15px;
-    box-shadow: 1px 1px 10px grey;
+    box-shadow: 1px 1px 10px rgb(196, 196, 196);
 }
 
 #teamCardDiv {
@@ -76,7 +64,6 @@ export default {
 #teamNameP {
     display: flex;
     flex-direction: column;
-    align-items: center;
     font-weight: bold;
 }
 </style>

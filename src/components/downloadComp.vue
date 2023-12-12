@@ -14,6 +14,7 @@
         </button>
     </div>
     <div id="colorBoxDiv">
+        <!-- just a colored box -->
     </div>
 </template>
 

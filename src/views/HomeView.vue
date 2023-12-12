@@ -4,8 +4,8 @@
     <History />
     <Download />
     <Team />
-    <!-- <Contact />
-    <Partners />
+    <Contact />
+    <!-- <Partners />
     <Foot /> -->
 </template>
 

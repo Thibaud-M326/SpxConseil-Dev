@@ -60,7 +60,6 @@ export default {
         chooseLang() {    
             this.changeColor()
             this.changeLang()
-
         },
         changeColor() {
             if(this.langEN == 'langColorBlack') {
@@ -73,10 +72,8 @@ export default {
         },
         changeLang() {
             if(this.langEN == 'langColorBlack') {
-                console.log('Anglais choisi')
                 this.$i18n.locale = "en"
             } else {
-                console.log('français choisi')
                 this.$i18n.locale = "fr"
             }
         }

@@ -17,6 +17,14 @@
         "download": "Telechargez notre plaquette"
     },
     "team": {
-        "ourTeam": "Notre Equipe"
+        "ourTeam": "Notre Equipe",
+        "president": "Président",
+        "vicePresident": "Vice-Président",
+        "generalSecretary": "Secrétaire Général",
+        "businessDevelopmentManager": "Responsable Developpement Commercial",
+        "businessDevelopmentDepartment": "Pôle Développement Commercial",
+        "communicationManager": "Responsable Communication",
+        "hrManager": "Responsable RH",
+        "treasurer": "Trésorier"
     }
 }
