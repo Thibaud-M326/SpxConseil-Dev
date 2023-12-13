@@ -26,5 +26,14 @@
         "communicationManager" : "Communication Manager",
         "hrManager" : "HR Manager",
         "treasurer" : "Treasurer"
+    },
+    "contact": {
+        "contact": "Contact",
+        "lastName": "Last Name*",
+        "firstName": "First Name*",
+        "mail": "Mail*",
+        "phone": "Phone",
+        "message": "Your Message*",
+        "send": "Send"
     }
 }

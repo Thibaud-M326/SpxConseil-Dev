@@ -26,5 +26,14 @@
         "communicationManager": "Responsable Communication",
         "hrManager": "Responsable RH",
         "treasurer": "Trésorier"
+    },
+    "contact": {
+        "contact": "contact",
+        "lastName": "Nom*",
+        "firstName": "Prenom*",
+        "mail": "Mail*",
+        "phone": "Telephone",
+        "message": "Votre Message*",
+        "send": "Envoyer"
     }
 }
