@@ -7,13 +7,13 @@
 					{{ $t('contact.contact') }}
 				</h2>
 			</div>
-            <form action="#" method="post" id="contactFormContainer">
+            <form action="https://formspree.io/f/xpzgvgwa" method="post" id="contactFormContainer">
                 <div id="leftFormDiv">
-                    <input name="Email" id="email" class="inputText" :placeholder="$t('contact.lastName')" required>
-                    <input name="Email" id="email" class="inputText" :placeholder="$t('contact.firstName')" required>
-                    <input name="Email" id="email" class="inputText" :placeholder="$t('contact.mail')" required>
-                    <input name="Email" id="email" class="inputText" :placeholder="$t('contact.phone')">
-                    <textarea name="yourMessage" id="yourMessageTextArea" :placeholder="$t('contact.message')" required></textarea>
+                    <input type="text" name="lastName" id="lastName" class="inputText" :placeholder="$t('contact.lastName')" required>
+                    <input type="text" name="firstName" id="firstName" class="inputText" :placeholder="$t('contact.firstName')" required>
+                    <input type="email" name="email" id="email" class="inputText" :placeholder="$t('contact.mail')" required>
+                    <input type="telephone" name="phone" id="email" class="inputText" :placeholder="$t('contact.phone')">
+                    <textarea name="message" id="yourMessageTextArea" :placeholder="$t('contact.message')" required></textarea>
                 </div>
                 <div id="sendButtonDiv">
                     <button type="submit" id="sendButton">
