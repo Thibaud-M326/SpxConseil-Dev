@@ -1,59 +1,112 @@
 <template>
     <div id="contactCompDiv">
         <div id="contactDiv">
-			<div id="titleDiv">
-				<v-icon icon="fas fa-envelope" />
-				<h2>
-					{{ $t('contact.contact') }}
-				</h2>
-			</div>
-            <form action="https://formspree.io/f/xpzgvgwa" method="post" id="contactFormContainer">
+            <div id="titleDiv">
+                <v-icon icon="fas fa-envelope" />
+                <h2>
+                    {{ $t('contact.contact') }}
+                </h2>
+            </div>
+            <VForm action="#" method="post" id="contactFormContainer" @submit="onSubmit" v-slot="{ errors }">
                 <div id="leftFormDiv">
-                    <input type="text" name="lastName" id="lastName" class="inputText" :placeholder="$t('contact.lastName')" required>
-                    <input type="text" name="firstName" id="firstName" class="inputText" :placeholder="$t('contact.firstName')" required>
-                    <input type="email" name="email" id="email" class="inputText" :placeholder="$t('contact.mail')" required>
-                    <input type="telephone" name="phone" id="email" class="inputText" :placeholder="$t('contact.phone')">
-                    <textarea name="message" id="yourMessageTextArea" :placeholder="$t('contact.message')" required></textarea>
+                    <div class="inputError">
+                        <ErrorMessage name="lastName"/>
+                        <VField type="text" name="lastName" class="inputText" :placeholder="$t('contact.lastName')" :rules="validateLastName"/>
+                    </div>
+                    
+                    <div class="inputError">
+                        <ErrorMessage name="firstName"/>
+                        <VField type="text" name="firstName" class="inputText" :placeholder="$t('contact.firstName')" :rules="validateFirstName"/>
+                    </div>
+
+                    <div class="inputError">
+                        <ErrorMessage name="email"/>
+                        <VField type="email" name="email" class="inputText" :placeholder="$t('contact.mail')" :rules="validateEmail"/>
+                    </div>
+
+                    <div class="inputError">
+                        <VField type="telephone" name="phone" class="inputText" :placeholder="$t('contact.phone')" />
+                    </div>
+
+                    <div>
+                        <textarea name="message" id="yourMessageTextArea" :placeholder="$t('contact.message')"></textarea>
+                    </div>
                 </div>
                 <div id="sendButtonDiv">
                     <button type="submit" id="sendButton">
                         Send
                     </button>
                 </div>
-            </form>
+            </VForm>
         </div>
     </div>
 </template>
 
 <script lang="ts">
-export default {
+import { Form, Field, ErrorMessage } from 'vee-validate'
 
+export default {
+    components: {
+        VForm: Form,
+        VField: Field,
+        ErrorMessage,
+    },
+    methods: {
+        onSubmit(values: Object) {
+            console.log(JSON.stringify(values, null, 2));
+        },
+        validateEmail(value: any) {
+            if (!value) {
+                return 'This field is required'
+            }
+
+            const regex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i;
+            if (!regex.test(value)) {
+                return 'This field must be a valid email'
+            }
+
+            return true;
+        },
+        validateLastName(value: any) {
+            if (!value) {
+                return 'This field is required'
+            }
+            
+            return true
+        },
+        validateFirstName(value: any) {
+            if (!value) {
+                return 'This field is required'
+            } 
+
+            return true
+        },
+    },
 }
 </script>
 
 <style scoped>
-
 #contactCompDiv {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 75vh;
 }
 
 #contactDiv {
-	width: 90vw;
-	height: 60vh;
+    width: 90vw;
+    height: 60vh;
 }
 
 #titleDiv {
-	display: flex;
-	align-items: center;
-	height: 8vh;
-    margin-bottom: 4vh;
+    display: flex;
+    align-items: center;
+    height: 8vh;
+    margin-bottom: 1vh;
+    margin-top: 2vw;
 }
 
 h2 {
-	margin-left: 2vw;
+    margin-left: 2vw;
 }
 
 #contactFormContainer {
@@ -61,29 +114,45 @@ h2 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-        justify-content: center;
+    justify-content: center;
 }
 
 #leftFormDiv {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
     width: 66vw;
 }
 
-.inputText {
+.inputError {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
     width: 32vw;
+    height: 10vh;
+    color: #972626;
+    /* background-color: #93a4db; */
+}
+
+.inputText {
+    width: 31vw;
     height: 6vh;
-    padding: 1vh; 
+    padding: 1vh;
     margin: 0.3vh;
     background-color: #F8F6F2;
     color: #264097;
 }
 
 #yourMessageTextArea {
+    display: flex;
+    
     height: 30vh;
-    width: 64.3vw;
-    padding: 1vh; 
+    width: 63.3vw;
+    padding: 1vh;
     margin: 0.3vh;
+    margin-top: 2vh;
     background-color: #F8F6F2;
-    color: #264097;
+    color: #264093;
 }
 
 #sendButtonDiv {
@@ -98,16 +167,26 @@ h2 {
     margin: 0.2vh;
     background-color: #F8F6F2;
     color: #3B57B1;
+    border:1px solid #264093;
+    border-radius: 3px;
 }
 
 @media (max-width: 1199px) {
+
+    #leftFormDiv {
+        justify-content: center;
+        flex-direction: column;
+        align-items: baseline;
+    }
+
     .inputText {
-        width: 64.3vw;
+        width: 63.3vw;
     }
 
     #sendButtonDiv {
         width: 66vw;
-        justify-content: end;
+        justify-content: start;
+        margin-top: 2vh;
     }
 
     #sendButton {

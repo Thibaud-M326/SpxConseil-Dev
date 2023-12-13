@@ -32,7 +32,7 @@
         "lastName": "Nom*",
         "firstName": "Prenom*",
         "mail": "Mail*",
-        "phone": "Telephone",
+        "phone": "Telephone (optionnel)",
         "message": "Votre Message*",
         "send": "Envoyer"
     }
