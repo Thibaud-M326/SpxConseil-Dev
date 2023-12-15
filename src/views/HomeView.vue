@@ -6,7 +6,7 @@
     <Team />
     <Contact />
     <Partners />
-    <!-- <Foot /> -->
+    <Foot />
 </template>
 
 <script lang="ts">

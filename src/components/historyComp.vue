@@ -43,7 +43,7 @@ export default {
     display:flex;
     flex-direction: column;
     justify-content: space-evenly;
-    height: 90vh;
+    height: 80vh;
 }
 
 #historyDiv {

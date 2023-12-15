@@ -16,13 +16,13 @@
             </a>
             <a 
             id="contactA" 
-            href="/"
+            href="#contactTitleDiv"
             >
                 contact
             </a>
             <p id="separatorDiv"></p>
             <a 
-            href="/">
+            href="https://www.linkedin.com/company/spx-conseil/" target="_blank">
                 <img 
                 id="linkedinImg"
                 src="../assets/socialNetwork/linkedinLogo.webp" 
@@ -90,6 +90,10 @@ export default {
     justify-content: space-between;
     border-bottom: 1px solid black;
     height: 4rem;
+}
+
+h1 {
+    font-family: 'Itim', cursive;
 }
 
 #navtopRightDiv {

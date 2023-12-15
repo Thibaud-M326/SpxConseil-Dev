@@ -31,6 +31,7 @@ export default {
     justify-content: center;
     align-items: center;
     height: 10vh;
+    margin-bottom: 3vh;
 }
 
 #downloadButton {

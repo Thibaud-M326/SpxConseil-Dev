@@ -1,7 +1,7 @@
 <template>
     <div id="contactCompDiv">
         <div id="contactDiv">
-            <div id="titleDiv">
+            <div id="contactTitleDiv">
                 <v-icon icon="fas fa-envelope" />
                 <h2>
                     {{ $t('contact.contact') }}
@@ -98,7 +98,7 @@ export default {
     width: 90vw;
 }
 
-#titleDiv {
+#contactTitleDiv {
     display: flex;
     align-items: center;
     height: 8vh;

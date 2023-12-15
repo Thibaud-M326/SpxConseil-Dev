@@ -40,5 +40,13 @@
     },
     "partners": {
         "partners": "Our Partners :"
+    },
+    "footer": {
+        "contact": "contact",
+        "aboutUs": "about us",
+        "spxConseil": "SPX Conseil",
+        "followUs": "follow us :",
+        "sciencePoAix": "SciencePo Aix",
+        "spxAddress" : "25 rue Gaston de Saporta 13100 Aix-en-Provence"
     }
 }
