@@ -17,7 +17,7 @@
         "download": "Telechargez notre plaquette"
     },
     "team": {
-        "ourTeam": "Notre Equipe",
+        "ourTeam": "Notre Equipe :",
         "president": "Président",
         "vicePresident": "Vice-Président",
         "generalSecretary": "Secrétaire Général",
@@ -28,12 +28,17 @@
         "treasurer": "Trésorier"
     },
     "contact": {
-        "contact": "contact",
+        "contact": "contact :",
         "lastName": "Nom*",
         "firstName": "Prenom*",
         "mail": "Mail*",
         "phone": "Telephone (optionnel)",
-        "message": "Votre Message*",
-        "send": "Envoyer"
+        "message": "Votre Message",
+        "send": "Envoyer",
+        "fieldRequired": "Ce champ est requis",
+        "fieldValidEmail": "Ce champ doit etre un email valide"
+    },
+    "partners": {
+        "partners": "Nos Partenaires :"
     }
 }

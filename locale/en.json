@@ -17,7 +17,7 @@
         "download": "Download our brochure"
     },
     "team": {
-        "ourTeam": "Our Team",
+        "ourTeam": "Our Team :",
         "president": "President",
         "vicePresident": "Vice President",
         "generalSecretary": "General Secretary",
@@ -28,12 +28,17 @@
         "treasurer" : "Treasurer"
     },
     "contact": {
-        "contact": "Contact",
+        "contact": "Contact :",
         "lastName": "Last Name*",
         "firstName": "First Name*",
         "mail": "Mail*",
         "phone": "Phone (optional)",
-        "message": "Your Message*",
-        "send": "Send"
+        "message": "Your Message",
+        "send": "Send",
+        "fieldRequired": "This field is required",
+        "fieldValidEmail": "This field must be a valid email"
+    },
+    "partners": {
+        "partners": "Our Partners :"
     }
 }

@@ -26,7 +26,6 @@
 			</Carousel>
 		</div>
 	</div>
-
     <div id="colorBoxDiv">
         <!-- just a colored box -->
     </div>
@@ -127,7 +126,6 @@ export default defineComponent({
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	/* background-color: aqua; */
 }
 
 #teamCompDiv {

@@ -39,7 +39,7 @@ export default {
     height: 44vh;
     width: 30vh;
     border-radius: 15px;
-    box-shadow: 1px 1px 10px rgb(196, 196, 196);
+    box-shadow: 1px 1px 10px rgb(238, 238, 238);
 }
 
 #teamCardDiv {

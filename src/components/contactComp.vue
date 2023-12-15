@@ -7,39 +7,44 @@
                     {{ $t('contact.contact') }}
                 </h2>
             </div>
-            <VForm action="#" method="post" id="contactFormContainer" @submit="onSubmit" v-slot="{ errors }">
-                <div id="leftFormDiv">
-                    <div class="inputError">
-                        <ErrorMessage name="lastName"/>
-                        <VField type="text" name="lastName" class="inputText" :placeholder="$t('contact.lastName')" :rules="validateLastName"/>
-                    </div>
-                    
-                    <div class="inputError">
-                        <ErrorMessage name="firstName"/>
-                        <VField type="text" name="firstName" class="inputText" :placeholder="$t('contact.firstName')" :rules="validateFirstName"/>
-                    </div>
+            <div id="formDiv">
+                <VForm action="https://formspree.io/f/xpzgvgwa" method="post" id="contactFormContainer" @submit="onSubmit">
+                    <div id="leftFormDiv">
+                        <div class="inputDiv">
+                            <ErrorMessage name="lastName" class="inputError"/>
+                            <VField type="text" name="lastName" class="inputText" :placeholder="$t('contact.lastName')" :rules="validateLastName"/>
+                        </div>
+                        
+                        <div class="inputDiv">
+                            <ErrorMessage name="firstName" class="inputError"/>
+                            <VField type="text" name="firstName" class="inputText" :placeholder="$t('contact.firstName')" :rules="validateFirstName"/>
+                        </div>
 
-                    <div class="inputError">
-                        <ErrorMessage name="email"/>
-                        <VField type="email" name="email" class="inputText" :placeholder="$t('contact.mail')" :rules="validateEmail"/>
-                    </div>
+                        <div class="inputDiv">
+                            <ErrorMessage name="email" class="inputError"/>
+                            <VField type="email" name="email" class="inputText" :placeholder="$t('contact.mail')" :rules="validateEmail"/>
+                        </div>
 
-                    <div class="inputError">
-                        <VField type="telephone" name="phone" class="inputText" :placeholder="$t('contact.phone')" />
-                    </div>
+                        <div class="inputDiv">
+                            <VField type="telephone" name="phone" class="inputText" :placeholder="$t('contact.phone')" />
+                        </div>
 
-                    <div>
-                        <textarea name="message" id="yourMessageTextArea" :placeholder="$t('contact.message')"></textarea>
+                        <div>
+                            <textarea name="message" id="yourMessageTextArea" :placeholder="$t('contact.message')"></textarea>
+                        </div>
                     </div>
-                </div>
-                <div id="sendButtonDiv">
-                    <button type="submit" id="sendButton">
-                        Send
-                    </button>
-                </div>
-            </VForm>
+                    <div id="sendButtonDiv">
+                        <button type="submit" id="sendButton">
+                            {{ $t('contact.send') }}
+                        </button>
+                    </div>
+                </VForm>
+            </div>
         </div>
     </div>
+    <div id="colorBoxDiv">
+        <!-- just a colored box -->
+    </div>  
 </template>
 
 <script lang="ts">
@@ -57,28 +62,25 @@ export default {
         },
         validateEmail(value: any) {
             if (!value) {
-                return 'This field is required'
+                return this.$t('contact.fieldRequired')
             }
 
             const regex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i;
             if (!regex.test(value)) {
-                return 'This field must be a valid email'
+                return this.$t('contact.fieldValidEmail')
             }
-
             return true;
         },
         validateLastName(value: any) {
             if (!value) {
-                return 'This field is required'
+                return this.$t('contact.fieldRequired')
             }
-            
             return true
         },
         validateFirstName(value: any) {
             if (!value) {
-                return 'This field is required'
+                return this.$t('contact.fieldRequired')
             } 
-
             return true
         },
     },
@@ -94,7 +96,6 @@ export default {
 
 #contactDiv {
     width: 90vw;
-    height: 60vh;
 }
 
 #titleDiv {
@@ -107,6 +108,11 @@ export default {
 
 h2 {
     margin-left: 2vw;
+}
+
+#formDiv{
+    height: 57vh;
+    margin-bottom: 10vh;
 }
 
 #contactFormContainer {
@@ -124,14 +130,18 @@ h2 {
     width: 66vw;
 }
 
-.inputError {
+.inputDiv {
     display: flex;
     flex-direction: column;
     justify-content: end;
     width: 32vw;
     height: 10vh;
     color: #972626;
-    /* background-color: #93a4db; */
+}
+
+.inputError {
+    font-size: small;
+    margin-left: 1vw;
 }
 
 .inputText {
@@ -145,12 +155,11 @@ h2 {
 
 #yourMessageTextArea {
     display: flex;
-    
     height: 30vh;
     width: 63.3vw;
     padding: 1vh;
     margin: 0.3vh;
-    margin-top: 2vh;
+    margin-top: 4vh;
     background-color: #F8F6F2;
     color: #264093;
 }
@@ -171,7 +180,16 @@ h2 {
     border-radius: 3px;
 }
 
+#colorBoxDiv {
+    height: 6vh;
+    background-color: #E3D1E6;
+}
+
 @media (max-width: 1199px) {
+    #formDiv{
+        height: 82vh;
+        margin-bottom: 10vh;
+    }
 
     #leftFormDiv {
         justify-content: center;
@@ -196,5 +214,6 @@ h2 {
     #contactFormContainer {
         justify-content: center;
     }
+
 }
 </style>

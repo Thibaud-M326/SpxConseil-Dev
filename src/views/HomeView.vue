@@ -5,8 +5,8 @@
     <Download />
     <Team />
     <Contact />
-    <!-- <Partners />
-    <Foot /> -->
+    <Partners />
+    <!-- <Foot /> -->
 </template>
 
 <script lang="ts">
