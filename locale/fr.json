@@ -17,6 +17,36 @@
         "download": "Telechargez notre plaquette"
     },
     "team": {
-        "ourTeam": "Notre Equipe"
+        "ourTeam": "Notre Equipe :",
+        "president": "Président",
+        "vicePresident": "Vice-Président",
+        "generalSecretary": "Secrétaire Général",
+        "businessDevelopmentManager": "Responsable Developpement Commercial",
+        "businessDevelopmentDepartment": "Pôle Développement Commercial",
+        "communicationManager": "Responsable Communication",
+        "hrManager": "Responsable RH",
+        "treasurer": "Trésorier"
+    },
+    "contact": {
+        "contact": "contact :",
+        "lastName": "Nom*",
+        "firstName": "Prenom*",
+        "mail": "Mail*",
+        "phone": "Telephone (optionnel)",
+        "message": "Votre Message",
+        "send": "Envoyer",
+        "fieldRequired": "Ce champ est requis",
+        "fieldValidEmail": "Ce champ doit etre un email valide"
+    },
+    "partners": {
+        "partners": "Nos Partenaires :"
+    },
+    "footer": {
+        "contact": "contact",
+        "aboutUs": "à notre propos",
+        "spxConseil": "SPX Conseil",
+        "followUs": "suivez-nous :",
+        "sciencePoAix": "SciencePo Aix",
+        "spxAddress" : "25 rue Gaston de Saporta 13100 Aix-en-Provence"
     }
 }

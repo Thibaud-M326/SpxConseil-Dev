@@ -17,6 +17,36 @@
         "download": "Download our brochure"
     },
     "team": {
-        "ourTeam": "Our Team"
+        "ourTeam": "Our Team :",
+        "president": "President",
+        "vicePresident": "Vice President",
+        "generalSecretary": "General Secretary",
+        "businessDevelopmentManager" : "Business Development Manager",
+        "businessDevelopmentDepartment" : "Commercial development Team",
+        "communicationManager" : "Communication Manager",
+        "hrManager" : "HR Manager",
+        "treasurer" : "Treasurer"
+    },
+    "contact": {
+        "contact": "Contact :",
+        "lastName": "Last Name*",
+        "firstName": "First Name*",
+        "mail": "Mail*",
+        "phone": "Phone (optional)",
+        "message": "Your Message",
+        "send": "Send",
+        "fieldRequired": "This field is required",
+        "fieldValidEmail": "This field must be a valid email"
+    },
+    "partners": {
+        "partners": "Our Partners :"
+    },
+    "footer": {
+        "contact": "contact",
+        "aboutUs": "about us",
+        "spxConseil": "SPX Conseil",
+        "followUs": "follow us :",
+        "sciencePoAix": "SciencePo Aix",
+        "spxAddress" : "25 rue Gaston de Saporta 13100 Aix-en-Provence"
     }
 }

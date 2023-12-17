@@ -4,9 +4,9 @@
     <History />
     <Download />
     <Team />
-    <!-- <Contact />
+    <Contact />
     <Partners />
-    <Foot /> -->
+    <Foot />
 </template>
 
 <script lang="ts">

@@ -14,6 +14,7 @@
         </button>
     </div>
     <div id="colorBoxDiv">
+        <!-- just a colored box -->
     </div>
 </template>
 
@@ -30,11 +31,12 @@ export default {
     justify-content: center;
     align-items: center;
     height: 10vh;
+    margin-bottom: 3vh;
 }
 
 #downloadButton {
     padding: 2vh 4vh;
-    font-size: 22px;
+    font-size: max(1.2vw, 15px);
     font-weight: bold;
     border-radius: 10px;
     box-shadow: 5px 5px 5px rgb(199, 199, 199);

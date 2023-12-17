@@ -1,9 +1,8 @@
 <template>
     <div id="navtop">
-        <div>
-            <h1
-            id="spxConseilH1"
-            >
+        <div id="logoTitleDiv">
+            <img id="spxConseilImg" src="../assets/SpxConseil/spxLogo.jpg" alt="Spx Conseil Logo">
+            <h1 id="spxConseilH1">
                 Spx Conseil
             </h1>
         </div>
@@ -16,13 +15,13 @@
             </a>
             <a 
             id="contactA" 
-            href="/"
+            href="#contactTitleDiv"
             >
                 contact
             </a>
             <p id="separatorDiv"></p>
             <a 
-            href="/">
+            href="https://www.linkedin.com/company/spx-conseil/" target="_blank">
                 <img 
                 id="linkedinImg"
                 src="../assets/socialNetwork/linkedinLogo.webp" 
@@ -60,7 +59,6 @@ export default {
         chooseLang() {    
             this.changeColor()
             this.changeLang()
-
         },
         changeColor() {
             if(this.langEN == 'langColorBlack') {
@@ -73,10 +71,8 @@ export default {
         },
         changeLang() {
             if(this.langEN == 'langColorBlack') {
-                console.log('Anglais choisi')
                 this.$i18n.locale = "en"
             } else {
-                console.log('français choisi')
                 this.$i18n.locale = "fr"
             }
         }
@@ -95,6 +91,26 @@ export default {
     height: 4rem;
 }
 
+#logoTitleDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#spxConseilImg {
+    width: 6vw;
+    height: 6vw;
+    margin-left: 2vw;
+    margin-top: 7vh;
+}
+
+#spxConseilH1 {
+    font-family: 'Itim', cursive;
+    font-size: max(1.5vw, 19px);
+    margin-left: 2vw;
+}
+
 #navtopRightDiv {
     display: flex;
     flex-direction: row;
@@ -102,21 +118,15 @@ export default {
     justify-content: space-between;
 }
 
-#spxConseilH1 {
-    font-size: 1.5rem;
-    margin: 1vh;
-    margin-left: 3vw;
-}
-
 #aboutUsA {
-    font-size: 1rem;
+    font-size: max(1vw, 12px);
     color: black;
     text-decoration: none;
     margin: 1vh;
 }
 
 #contactA {
-    font-size: 1rem;
+    font-size: max(1vw, 12px);
     text-decoration: none;
     margin: 1vh;
     margin-right: 2vw;
@@ -138,7 +148,7 @@ export default {
 }
 
 #buttonDiv {
-    font-size: 0.9rem;
+    font-size: max(0.9vw, 12px);
     width: 60px;
     display: flex;
     flex-direction: row;
@@ -156,4 +166,9 @@ export default {
     color: grey
 }
 
+@media only screen and (max-width: 850px) {
+    #spxConseilImg {
+        margin-top: 0vh;
+    }
+}
 </style>

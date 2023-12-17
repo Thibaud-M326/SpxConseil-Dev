@@ -43,7 +43,7 @@ export default {
     display:flex;
     flex-direction: column;
     justify-content: space-evenly;
-    height: 90vh;
+    height: 80vh;
 }
 
 #historyDiv {
@@ -67,10 +67,11 @@ export default {
 
 h2 {
     margin-bottom: 1vh;
+    font-size: max(1.5vw, 21px);
 }
 
 p {
-    font-size: large
+    font-size: max(1vw, 14px);
 }
 
 #masterDiv {
@@ -93,4 +94,17 @@ p {
     width: 60vw;
     overflow: auto;
 }
+
+@media only screen and (max-width: 850px) {
+    #historyDiv {
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
+    }
+
+    #masterDiv {
+        border-top-left-radius: 50px;
+        border-bottom-left-radius: 50px;
+    }
+}
+
 </style>
