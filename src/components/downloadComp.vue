@@ -36,7 +36,7 @@ export default {
 
 #downloadButton {
     padding: 2vh 4vh;
-    font-size: 22px;
+    font-size: max(1.2vw, 15px);
     font-weight: bold;
     border-radius: 10px;
     box-shadow: 5px 5px 5px rgb(199, 199, 199);

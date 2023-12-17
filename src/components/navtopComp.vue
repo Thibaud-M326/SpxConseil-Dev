@@ -1,9 +1,8 @@
 <template>
     <div id="navtop">
-        <div>
-            <h1
-            id="spxConseilH1"
-            >
+        <div id="logoTitleDiv">
+            <img id="spxConseilImg" src="../assets/SpxConseil/spxLogo.jpg" alt="Spx Conseil Logo">
+            <h1 id="spxConseilH1">
                 Spx Conseil
             </h1>
         </div>
@@ -92,8 +91,24 @@ export default {
     height: 4rem;
 }
 
-h1 {
+#logoTitleDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#spxConseilImg {
+    width: 6vw;
+    height: 6vw;
+    margin-left: 2vw;
+    margin-top: 7vh;
+}
+
+#spxConseilH1 {
     font-family: 'Itim', cursive;
+    font-size: max(1.5vw, 19px);
+    margin-left: 2vw;
 }
 
 #navtopRightDiv {
@@ -103,21 +118,15 @@ h1 {
     justify-content: space-between;
 }
 
-#spxConseilH1 {
-    font-size: 1.5rem;
-    margin: 1vh;
-    margin-left: 3vw;
-}
-
 #aboutUsA {
-    font-size: 1rem;
+    font-size: max(1vw, 12px);
     color: black;
     text-decoration: none;
     margin: 1vh;
 }
 
 #contactA {
-    font-size: 1rem;
+    font-size: max(1vw, 12px);
     text-decoration: none;
     margin: 1vh;
     margin-right: 2vw;
@@ -139,7 +148,7 @@ h1 {
 }
 
 #buttonDiv {
-    font-size: 0.9rem;
+    font-size: max(0.9vw, 12px);
     width: 60px;
     display: flex;
     flex-direction: row;
@@ -157,4 +166,9 @@ h1 {
     color: grey
 }
 
+@media only screen and (max-width: 850px) {
+    #spxConseilImg {
+        margin-top: 0vh;
+    }
+}
 </style>

@@ -56,10 +56,11 @@ export default {
 
 #overviewH2 {
     margin-bottom: 1vh;
+    font-size: max(1.5vw, 21px);
 }
 
 #textP {
-    font-size: large;
+    font-size: max(1vw, 14px);
 }
 
 
